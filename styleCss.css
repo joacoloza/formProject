@@ -1,0 +1,16 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Roboto',sans-serif;
+    font-style: 'Roboto';
+  }
+
+.wrap {
+    display: flex;
+    flex-direction: row;
+}
+
+.leftSide {
+    background-color: black;
+}
