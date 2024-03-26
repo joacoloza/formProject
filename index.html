@@ -7,17 +7,56 @@
     <title>Form Project</title>
 </head>
 <body>
-    <wra class="wrap">
-        <div class="leftSide"></div>
+    <div class="container">
+        <div class="leftSide">
+            <div class="logoSection">
+                <p>Form Pannel</p>
+                <img src="D:\Usuario\Desktop\formProject\logo-github.svg" alt="logo img">
+            </div>    
+        </div>
         <div class="rigthSide">
-            <p>This is not a real online service.
+            
+            <p >This is not a real online service.
                 You know you need something like
                 this in your life to help you realize
                 your depeest dreams.
                 sign up now and get started
             </p>
-            <p>you know you want to</p>
+
+             <div class="formDiv">   
+               
+                <form id="form" class="form" action="example.com/path" method="post">
+                    <h3>Let's Start!</h3>
+                    
+                    <fieldset >
+                        <label for="first_name">First Name:</label>
+                        <input type="text" id="first_name" name="first_name" placeholder="Name"> 
+                    
+                        <label for="first_name">Last Name:</label>
+                        <input type="text" id="last_name" name="last_name" placeholder="Surname">  
+                    </fieldset>
+
+                    <fieldset>
+                        <label for="user_email">Email Addres:</label>
+                        <input type="email" id="user_email" name="email" placeholder="your Email">
+                        
+                        <label for="user_phone" >Phone Number:</label>
+                        <input type="tel" id="user_phone" name="user_phone" placeholder="Your Phone Number">
+                    </fieldset>
+
+                    <fieldset>
+                        <label for="user_password" >Password</label>
+                        <input type="password" name="user_password" id="user_password"placeholder="Secure Password">
+                        
+                        <label for="confirmation_password">Confirm Password</label>
+                        <input type="password" name="confirmation_password" id="confirmation_password" placeholder="Secure Password">
+                    </fieldset>
+                
+                    <button type="submit" id="btn">Submit</button>
+                </form>
+            </div>
         </div>
-    </wrap>
+    </div>
+    <script src="passwordControl.js"></script>
 </body>
 </html>
